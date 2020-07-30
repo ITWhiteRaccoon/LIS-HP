@@ -3,28 +3,48 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using ShellProgressBar;
 
 namespace LIS_HP
 {
-    class Program
+    class Decoder
     {
-        //Para codificar, somar chave com posição e dividir pelo comprimento do dicionário.
-        //Isso devolve a posição final.
-
         //Criar um 'mapa'com os caracteres nas posições das chaves
-        private const int Key = 19;
         private const string Dicionario = "ABCDEFGHIJKLMNOPQRSTUVWXYZ.,;!?";
+        //Classe que calcula pontuação das frases com base em quão próximo do ingles
+        private static Frequencia _frequencia;
 
-        //Fazer apenas uma classe devido a simplicidade
         private static void Main(string[] args)
         {
-            string codigo = LerArquivo(args[0]);
-            Console.WriteLine(DecodificarString(Key, codigo));
+            Console.WriteLine("Por favor informe o caminho para a mensagem criptografada:");
+            string caminho = Console.ReadLine();
+            string codigo = LerArquivo(caminho);
+
+            _frequencia = new Frequencia(Properties.Resources.EnglishQuadgrams);
+
+            Console.WriteLine(QuebrarCriptografia(codigo));
             Console.ReadKey();
         }
 
-        private static string DecodificarString(int chave, string codigo)
+        private static string QuebrarCriptografia(string codigo)
+        {
+            //Guarda uma lista dos scores de cada uma das chaves possíveis
+            var listaScores = new List<double>();
+            using (var pbar = new ProgressBar(Dicionario.Length, "Decifrando mensagem...", new ProgressBarOptions { ProgressCharacter = '─' }))
+            {
+                for (int i = 0; i < Dicionario.Length; i++)
+                {
+                    //Decifra o texto, calcula o quanto parece com ingles e guarda a pontuacao
+                    string textoDecifrado = DecifrarString(i, codigo);
+                    listaScores.Add(_frequencia.CalcularScore(textoDecifrado));
+                    pbar.Tick($"Testando chave {i + 1} de {Dicionario.Length}.");
+                }
+            }
+            //Retorna o texto decifrado da chave com maior score
+            return DecifrarString(listaScores.IndexOf(listaScores.Max()), codigo);
+        }
+
+        private static string DecifrarString(int chave, string codigo)
         {
             var textoDecodificado = new StringBuilder();
             foreach (char c in codigo)
@@ -53,7 +73,7 @@ namespace LIS_HP
 
         private static string LerArquivo(string strArquivo)
         {
-            string codigo = "";
+            string codigo;
             using (var sr = new StreamReader(strArquivo))
             {
                 codigo = sr.ReadToEnd();
