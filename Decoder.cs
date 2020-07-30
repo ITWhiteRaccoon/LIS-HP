@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using ShellProgressBar;
 
 namespace LIS_HP
 {
@@ -22,7 +21,10 @@ namespace LIS_HP
 
             _frequencia = new Frequencia(Properties.Resources.EnglishQuadgrams);
 
+
+            Console.WriteLine("A mensagem é:");
             Console.WriteLine(QuebrarCriptografia(codigo));
+            Console.WriteLine("Pressione qualquer tecla para sair.");
             Console.ReadKey();
         }
 
@@ -30,16 +32,14 @@ namespace LIS_HP
         {
             //Guarda uma lista dos scores de cada uma das chaves possíveis
             var listaScores = new List<double>();
-            using (var pbar = new ProgressBar(Dicionario.Length, "Decifrando mensagem...", new ProgressBarOptions { ProgressCharacter = '─' }))
-            {
+
                 for (int i = 0; i < Dicionario.Length; i++)
                 {
                     //Decifra o texto, calcula o quanto parece com ingles e guarda a pontuacao
                     string textoDecifrado = DecifrarString(i, codigo);
                     listaScores.Add(_frequencia.CalcularScore(textoDecifrado));
-                    pbar.Tick($"Testando chave {i + 1} de {Dicionario.Length}.");
                 }
-            }
+
             //Retorna o texto decifrado da chave com maior score
             return DecifrarString(listaScores.IndexOf(listaScores.Max()), codigo);
         }
