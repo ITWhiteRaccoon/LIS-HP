@@ -61,11 +61,519 @@ namespace LIS_HP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to ERET 236210
+        ///ENDE 220696
+        ///ERNE 212726
+        ///IKKE 208876
+        ///NING 173380
+        ///INGE 166936
+        ///CERE 161753
+        ///ERDE 159909
+        ///UBLI 157987
+        ///NDER 157847
+        ///PUBL 157102
+        ///ICER 155945
+        ///LICE 152151
+        ///BLIC 151546
+        ///ELSE 146682
+        ///DERE 140060
+        ///EDER 137210
+        ///ANDE 128249
+        ///LIGE 120610
+        ///LLER 119294
+        ///RFOR 116010
+        ///LAND 114643
+        ///RING 112170
+        ///NGEN 110903
+        ///KOMM 109373
+        ///EREN 109078
+        ///TERE 102941
+        ///ETER 102572
+        ///OVER 102473
+        ///ERER 98284
+        ///TION 97956
+        ///NDEN 97103
+        ///EFOR 95618
+        ///INDE 94909
+        ///ILLE 93926
+        ///UNDE 93710
+        ///TFOR 92203
+        ///DERS 92150
+        ///NGER 91214
+        ///FTER 91175
+        ///FORS 91111
+        ///ELLE 90961
+        ///STER 90548
+        ///OMME 90536 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DanishQuadgrams {
+            get {
+                return ResourceManager.GetString("DanishQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TION 13168375
+        ///NTHE 11234972
+        ///THER 10218035
+        ///THAT 8980536
+        ///OFTH 8132597
+        ///FTHE 8100836
+        ///THES 7717675
+        ///WITH 7627991
+        ///INTH 7261789
+        ///ATIO 7104943
+        ///OTHE 6900574
+        ///TTHE 6553056
+        ///DTHE 6470280
+        ///INGT 6461147
+        ///ETHE 6135216
+        ///SAND 5996705
+        ///STHE 5748611
+        ///HERE 5630500
+        ///THEC 5466071
+        ///MENT 4968019
+        ///THEM 4911484
+        ///RTHE 4862875
+        ///THEP 4458634
+        ///FROM 4361347
+        ///THIS 4344608
+        ///TING 4291641
+        ///THEI 4217321
+        ///NGTH 4162753
+        ///IONS 4045101
+        ///ANDT 4020364
+        ///ONTH 3976144
+        ///TOTH 3911094
+        ///EDTO 3886447
+        ///THEF 3873133
+        ///THEY 3809433
+        ///HAVE 3735139
+        ///EDTH 3699013
+        ///INGA 3675933
+        ///NDTH 3619148
+        ///TH [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string EnglishQuadgrams {
             get {
                 return ResourceManager.GetString("EnglishQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INEN 198239
+        ///ISTA 184176
+        ///ISSA 135771
+        ///ISEN 134185
+        ///LLIS 127537
+        ///ASSA 126771
+        ///TAAN 114744
+        ///TIIN 111503
+        ///UTTA 109419
+        ///ASTA 108928
+        ///ALLI 102569
+        ///LAIS 102461
+        ///ISTE 96143
+        ///TETT 93733
+        ///TAJA 90351
+        ///UKSE 90300
+        ///ISES 90144
+        ///ESSA 89722
+        ///ALAI 89305
+        ///UONN 88096
+        ///AISE 87462
+        ///OITT 84758
+        ///MYÖS 84598
+        ///ONNA 83748
+        ///TTII 82407
+        ///ALLA 80962
+        ///VUON 80366
+        ///ESTA 80176
+        ///SEST 80171
+        ///TAVA 77907
+        ///IDEN 77821
+        ///KSEN 77576
+        ///USTA 75123
+        ///ANSA 74920
+        ///ETTI 74756
+        ///SEEN 74411
+        ///AINE 72831
+        ///IVAT 72763
+        ///ISTÄ 72758
+        ///STAA 72401
+        ///MIST 71702
+        ///ELLA 70986
+        ///MAAN 70802
+        ///AIST 70189
+        ///ENKI 69121
+        ///LISE  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string FinnishQuadgrams {
+            get {
+                return ResourceManager.GetString("FinnishQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TION 1204060
+        ///MENT 950534
+        ///EMEN 716108
+        ///DELA 669536
+        ///ATIO 663577
+        ///IQUE 650168
+        ///ELLE 559298
+        ///DANS 524845
+        ///POUR 483581
+        ///ESDE 423765
+        ///EDES 388124
+        ///ONDE 383511
+        ///IOND 373955
+        ///IONS 360602
+        ///ANSL 351881
+        ///AIRE 348812
+        ///PLUS 339802
+        ///ILLE 335479
+        ///QUEL 333244
+        ///SONT 322336
+        ///EDEL 319756
+        ///QUES 317829
+        ///COMM 307474
+        ///ENTD 307263
+        ///EURS 300517
+        ///NTDE 295737
+        ///PART 286345
+        ///NTRE 284951
+        ///OUVE 278740
+        ///ENTE 273729
+        ///SLES 270245
+        ///ENTR 267277
+        ///OMME 264651
+        ///IENT 259168
+        ///ARTI 256222
+        ///REDE 255337
+        ///LEME 255125
+        ///EPAR 252934
+        ///ENTA 252500
+        ///ENTS 248525
+        ///ECON 246801
+        ///LEUR 245349
+        ///AVEC 24 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string FrenchQuadgrams {
+            get {
+                return ResourceManager.GetString("FrenchQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EINE 3692344
+        ///NDER 2624230
+        ///ICHT 2401684
+        ///CHEN 2159090
+        ///SCHE 2058078
+        ///ENDE 1808194
+        ///LICH 1795107
+        ///SICH 1669502
+        ///ERDE 1585800
+        ///INDE 1552055
+        ///NDEN 1446182
+        ///RDEN 1402880
+        ///NDIE 1363088
+        ///ISCH 1347060
+        ///ICHE 1334990
+        ///AUCH 1320389
+        ///ERST 1262306
+        ///SEIN 1248096
+        ///NTER 1230100
+        ///NGEN 1175742
+        ///NICH 1164468
+        ///EITE 1151669
+        ///ANDE 1127472
+        ///TSCH 1084653
+        ///EDER 1064243
+        ///DIES 1042961
+        ///NACH 1034475
+        ///DERS 1024629
+        ///ESCH 1022874
+        ///ÜBER 1013830
+        ///EREI 1003439
+        ///CHTE 974771
+        ///UNDE 953887
+        ///EICH 952580
+        ///NUND 952127
+        ///INER 951293
+        ///ERUN 939843
+        ///ENUN 936788
+        ///DASS 935177
+        ///TEIN 921075
+        ///N [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GermanQuadgrams {
+            get {
+                return ResourceManager.GetString("GermanQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EKKI 485412
+        ///YRIR 437259
+        ///FYRI 434345
+        ///ÞESS 411199
+        ///INGA 361219
+        ///LEGA 344225
+        ///NING 328695
+        ///HANN 315593
+        ///ANNA 309498
+        ///FRAM 304027
+        ///INNI 300540
+        ///ANDI 281856
+        ///VERÐ 272540
+        ///INGU 267195
+        ///NNAR 257697
+        ///INNA 251043
+        ///NGAR 248222
+        ///HVER 246866
+        ///LAND 244457
+        ///EGAR 225025
+        ///RINN 217131
+        ///EFTI 210589
+        ///FTIR 208420
+        ///EINS 205019
+        ///RSEM 203415
+        ///LEIK 202818
+        ///ÞEIR 202593
+        ///REIN 202589
+        ///EFUR 201569
+        ///MENN 199578
+        ///ETTA 199259
+        ///SINS 194270
+        ///HEFU 189420
+        ///ÞETT 187656
+        ///STAÐ 187244
+        ///ESSA 181660
+        ///HEIM 181369
+        ///STAR 181071
+        ///TILA 180122
+        ///MANN 174737
+        ///ILAÐ 171681
+        ///STJÓ 166715
+        ///TJÓR 165 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IcelandicQuadgrams {
+            get {
+                return ResourceManager.GetString("IcelandicQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PRZE 247520
+        ///OWAN 151117
+        ///NYCH 149657
+        ///OSTA 132652
+        ///DZIE 130650
+        ///OŚCI 116959
+        ///SKIE 110997
+        ///JEST 109319
+        ///ANIE 100589
+        ///PRZY 100110
+        ///STAŁ 98632
+        ///ENIE 95764
+        ///ZOST 95399
+        ///KTÓR 93679
+        ///ROKU 89915
+        ///ZENI 88991
+        ///NIEJ 88776
+        ///ENIA 85553
+        ///IENI 84355
+        ///IEJS 82221
+        ///RZEZ 80276
+        ///ANIA 79813
+        ///OWIE 78343
+        ///ODZI 77611
+        ///IEGO 77570
+        ///NEGO 76849
+        ///JEDN 71795
+        ///YCZN 70872
+        ///NIEM 70571
+        ///WANI 70399
+        ///OWAŁ 68070
+        ///SZCZ 64167
+        ///CZAS 63685
+        ///AJĄC 62976
+        ///STAN 60753
+        ///DZIA 60386
+        ///KIEG 59734
+        ///CZNE 59283
+        ///KIEJ 58409
+        ///NIEW 58320
+        ///ORAZ 57881
+        ///TYCZ 56871
+        ///PRAW 56464
+        ///PIER 56124
+        ///KICH 55367
+        ///CZNY 53 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PolishQuadgrams {
+            get {
+                return ResourceManager.GetString("PolishQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ЕНИЯ 417480
+        ///ЕНИЕ 397711
+        ///НОГО 350069
+        ///ЛЬНО 345054
+        ///ИЧЕС 342329
+        ///НОСТ 341856
+        ///ЧЕСК 341351
+        ///ТЕЛЬ 339720
+        ///АЛЬН 324139
+        ///ЛЕНИ 297875
+        ///ЕННО 297702
+        ///ЕТСЯ 291055
+        ///ИТЕЛ 288698
+        ///ОВАН 281911
+        ///ОТОР 274132
+        ///ОСТА 269617
+        ///КОТО 269496
+        ///СТАВ 261438
+        ///ЕЛЬН 260574
+        ///ЕСТВ 260438
+        ///ГОДА 253385
+        ///ВАНИ 247711
+        ///КОГО 244682
+        ///СТВО 236800
+        ///СКОЙ 231529
+        ///ПРЕД 230786
+        ///ЛЬНЫ 227041
+        ///СТВЕ 225949
+        ///ОСТИ 219509
+        ///ПЕРЕ 216655
+        ///ЕННЫ 214801
+        ///СКОГ 209280
+        ///ТОРО 202342
+        ///АНИЯ 201052
+        ///ОСТЬ 199441
+        ///ПРАВ 196672
+        ///ЧАСТ 192743
+        ///ПОСЛ 192256
+        ///АНИЕ 192240
+        ///ЕСКИ 185100
+        ///ЕСКО 184965
+        ///ОСЛЕ 184042
+        ///СКИЙ 183 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RussianQuadgrams {
+            get {
+                return ResourceManager.GetString("RussianQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CION 336012
+        ///DELA 262918
+        ///ACIO 216501
+        ///ENTE 195858
+        ///ESTA 174928
+        ///ESDE 174010
+        ///PARA 148049
+        ///ONES 136017
+        ///SDEL 133576
+        ///OSDE 132251
+        ///MENT 129050
+        ///IONE 128676
+        ///ODEL 128279
+        ///ONDE 124930
+        ///OQUE 122409
+        ///IDAD 120123
+        ///ELOS 120011
+        ///ADEL 119643
+        ///ANTE 117506
+        ///ENTO 114376
+        ///NCIA 114104
+        ///AQUE 112959
+        ///SQUE 112264
+        ///ENCI 103667
+        ///ENLA 102024
+        ///ENTR 99464
+        ///IENT 98801
+        ///ASDE 97045
+        ///ENEL 96902
+        ///DELO 96346
+        ///IOND 91500
+        ///QUEE 91214
+        ///ADOS 90197
+        ///ENTA 89626
+        ///NTES 89127
+        ///PRES 88411
+        ///ELAS 88304
+        ///QUES 86033
+        ///ACON 85833
+        ///CONT 82264
+        ///ALES 80904
+        ///QUEL 79044
+        ///SION 75440
+        ///ECON 74946
+        ///NTR [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SpanishQuadgrams {
+            get {
+                return ResourceManager.GetString("SpanishQuadgrams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TILL 261492
+        ///NING 179283
+        ///ANDE 151021
+        ///LAND 127677
+        ///NDER 118250
+        ///ADES 104093
+        ///FÖRS 100793
+        ///UNDE 100368
+        ///ERNA 99335
+        ///TION 98594
+        ///NGEN 97345
+        ///FRÅN 95415
+        ///NOCH 91809
+        ///INGE 85208
+        ///RADE 82354
+        ///ROCH 82299
+        ///ISKA 80551
+        ///NSKA 79520
+        ///LLER 78985
+        ///RATT 78685
+        ///ENSK 75328
+        ///ERAD 74148
+        ///FTER 73726
+        ///NFÖR 73181
+        ///INGA 72942
+        ///ÄREN 72400
+        ///INTE 68922
+        ///EFTE 67854
+        ///STER 66041
+        ///STOR 64973
+        ///ELLE 64620
+        ///RING 63697
+        ///NGAR 62579
+        ///IONE 62535
+        ///FÖRA 61868
+        ///SPEL 61743
+        ///AREN 61354
+        ///ÖRST 60783
+        ///RSOM 60435
+        ///OCHS 59623
+        ///ATIO 59316
+        ///KOMM 59223
+        ///TOCH 58736
+        ///TFÖR 58473
+        ///ARNA 58318
+        ///STAD 5758 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SwedishQuadgrams {
+            get {
+                return ResourceManager.GetString("SwedishQuadgrams", resourceCulture);
             }
         }
     }

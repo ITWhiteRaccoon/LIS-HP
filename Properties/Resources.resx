@@ -118,7 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DanishQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DanishQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="EnglishQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EnglishQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FinnishQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FinnishQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FrenchQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrenchQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GermanQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GermanQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IcelandicQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IcelandicQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PolishQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PolishQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RussianQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RussianQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SpanishQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpanishQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SwedishQuadgrams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwedishQuadgrams.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

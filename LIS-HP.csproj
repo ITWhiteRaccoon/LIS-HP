@@ -51,6 +51,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EnglishQuadgrams.txt" />
+    <None Include="Resources\DanishQuadgrams.txt" />
+    <None Include="Resources\FinnishQuadgrams.txt" />
+    <None Include="Resources\FrenchQuadgrams.txt" />
+    <None Include="Resources\GermanQuadgrams.txt" />
+    <None Include="Resources\IcelandicQuadgrams.txt" />
+    <None Include="Resources\PolishQuadgrams.txt" />
+    <None Include="Resources\RussianQuadgrams.txt" />
+    <None Include="Resources\SpanishQuadgrams.txt" />
+    <None Include="Resources\SwedishQuadgrams.txt" />
     <Content Include="SecretMessage.txt" />
   </ItemGroup>
   <ItemGroup>

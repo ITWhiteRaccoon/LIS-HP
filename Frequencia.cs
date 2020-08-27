@@ -21,9 +21,12 @@ namespace LIS_HP
             var listaFrequencias = Regex.Split(strFrequencias, "\n|\r\n");
             foreach (string s in listaFrequencias)
             {
-                var linha = s.Split(' ');
-                mapaScores.Add(linha[0], Convert.ToDouble(linha[1]));
-                frequenciaTotal += Convert.ToDouble(linha[1]);
+                if (s.Length > 0)
+                {
+                    var linha = s.Split(' ');
+                    mapaScores.Add(linha[0], Convert.ToDouble(linha[1]));
+                    frequenciaTotal += Convert.ToDouble(linha[1]);
+                }
             }
             var chaves = new List<string>(mapaScores.Keys);
             tamanhoNgram = chaves[0].Length;
