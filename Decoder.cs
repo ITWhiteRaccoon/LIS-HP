@@ -34,12 +34,16 @@ namespace LIS_HP
             {
                 Rings = new[] { 'C', 'E', 'A' },
                 Grund = new[] { 'A', 'A', 'A' },
-                Order = "III-I-II",
                 Reflector = 'B'
             };
 
-            maquina.setSettings(config.Rings, config.Grund, config.Order, config.Reflector);
-            maquina.addPlug('V', 'A');
+            foreach (var rOrder in orderList)
+            {
+                config.Order = rOrder;
+                maquina = new EnigmaMachine();
+                maquina.setSettings(config.Rings, config.Grund, config.Order, config.Reflector);
+                maquina.addPlug('V', 'A');
+            }
             Console.WriteLine(maquina.runEnigma(codigo));
 
             //var frequencias = new Dictionary<string, string>
