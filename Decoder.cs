@@ -18,45 +18,35 @@ namespace LIS_HP
         private static void Main(string[] args)
         {
             //SETTING MACHINE
-            //string codigo = "HGNCAZM";
-            //Console.WriteLine();
+            string codigo = "HGNCAZM";
+            Console.WriteLine();
 
-            //var orderList = new List<string>
-            //{
-            //    "I-II-III",
-            //    "I-III-II",
-            //    "II-I-III",
-            //    "II-III-I",
-            //    "III-I-II",
-            //    "III-II-I"
-            //};
+            var orderList = new List<string>
+            {
+                "I-II-III",
+                "I-III-II",
+                "II-I-III",
+                "II-III-I",
+                "III-I-II",
+                "III-II-I"
+            };
+            var ringList = new List<char[]>
+            {
+                new []{ 'A', 'C', 'E' },
+                new []{ 'A', 'E', 'C' },
+                new []{ 'C', 'E', 'A' },
+                new []{ 'C', 'A', 'E' },
+                new []{ 'E', 'A', 'C' },
+                new []{ 'E', 'C', 'A' },
+            };
 
-            //var maquina = new EnigmaMachine();
-            //var config = new EnigmaSettings
-            //{
-            //    Rings = new[] { 'C', 'E', 'A' },
-            //    Grund = new[] { 'A', 'A', 'A' },
-            //    Reflector = 'B'
-            //};
-
-            //foreach (char c in Dicionario)
-            //{
-            //    foreach (char cc in Dicionario)
-            //    {
-            //        foreach (var rOrder in orderList)
-            //        {
-            //            config.Order = rOrder;
-            //            maquina = new EnigmaMachine();
-            //            maquina.setSettings(config.Rings, config.Grund, config.Order, config.Reflector);
-            //            maquina.addPlug(c, cc);
-            //        }
-            //    }
-            //}
-
-            //Console.WriteLine(maquina.runEnigma(codigo));
-
-
-
+            var maquina = new EnigmaMachine();
+            var config = new EnigmaSettings
+            {
+                Rings = new[] { 'A', 'A', 'A' },
+                Grund = new[] { 'C', 'E', 'A' },
+                Reflector = 'B'
+            };
 
             var frequencias = new Dictionary<string, string>
             {
@@ -71,7 +61,22 @@ namespace LIS_HP
                 {"Spanish",Properties.Resources.SpanishQuadgrams},
                 {"Swedish",Properties.Resources.SwedishQuadgrams}
             };
-            var listaPalavras = new List<string>(Regex.Split(Properties.Resources.saida, "\n|\r\n"));
+
+            var listaPalavras = new List<string>();
+            foreach (char c in Dicionario)
+            {
+                foreach (char cc in Dicionario)
+                {
+                    foreach (string rOrder in orderList)
+                    {
+                        maquina = new EnigmaMachine();
+                        maquina.setSettings(config.Rings, config.Grund, rOrder, config.Reflector);
+                        maquina.addPlug(c, cc);
+                        listaPalavras.Add(maquina.runEnigma(codigo));
+                    }
+                }
+            }
+
 
             foreach (var f in frequencias)
             {
@@ -91,8 +96,9 @@ namespace LIS_HP
                         maiorValor = scores[i];
                     }
                 }
-                Console.WriteLine($"{f.Key}\t-\t{listaPalavras[maiorIndex]}");
+                Console.WriteLine($"{f.Key}\t\t-\t{listaPalavras[maiorIndex]}");
             }
+
             Console.WriteLine("Pressione qualquer tecla para sair.");
             Console.ReadKey();
         }
