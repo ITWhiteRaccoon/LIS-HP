@@ -471,6 +471,71 @@ namespace LIS_HP.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PTXBOJH
+        ///DYQULIU
+        ///LAUSNFZ
+        ///EMSRNEG
+        ///SHURLEH
+        ///PVETUPO
+        ///PTXARJH
+        ///DYQIHIU
+        ///LBUFKFZ
+        ///EMSWSEG
+        ///SHUWMEH
+        ///PVENTPO
+        ///PTXDKJH
+        ///AYQUJIU
+        ///LBUSLFZ
+        ///EMSRGEG
+        ///SHURREH
+        ///PVETGPO
+        ///PTXEFJH
+        ///DYQUEIU
+        ///LBUSMFZ
+        ///AMSRWAG
+        ///SHURGAH
+        ///PVATEPO
+        ///PTXFEJH
+        ///DYQUGIU
+        ///LBUSYAZ
+        ///EMSRMEG
+        ///SHURIEH
+        ///PVETHPO
+        ///PEXGQJH
+        ///DXQUFIU
+        ///LXUSWFZ
+        ///EPSRDEA
+        ///SEUREEH
+        ///PWETDPO
+        ///FTXHIJA
+        ///NYQUCIU
+        ///IBUSSFZ
+        ///OMSRZEG
+        ///MAURPEA
+        ///NVETFPO
+        ///PTXIHJH
+        ///DYQUTAU
+        ///LBUSQFZ
+        ///EMSRPEG
+        ///SHURFEH
+        ///PVETNPO
+        ///PTXJMAH
+        ///DYQUDIU
+        ///LBUSOFZ
+        ///EMSRREG
+        ///SHURTEH
+        ///PVETOPO
+        ///PTXKDJH
+        ///DYQUMIU
+        ///LBUSCFZ        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string saida {
+            get {
+                return ResourceManager.GetString("saida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CION 336012
         ///DELA 262918
         ///ACIO 216501

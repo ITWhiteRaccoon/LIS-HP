@@ -61,7 +61,6 @@
     <None Include="Resources\RussianQuadgrams.txt" />
     <None Include="Resources\SpanishQuadgrams.txt" />
     <None Include="Resources\SwedishQuadgrams.txt" />
-    <Content Include="SecretMessage.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -69,6 +68,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saida.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
