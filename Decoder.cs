@@ -16,17 +16,19 @@ namespace LIS_HP
 
         private static void Main(string[] args)
         {
-            Console.WriteLine("Por favor informe a mensagem criptografada:");
-            string codigo = Console.ReadLine();
+            string codigo = "HGNCAZM";
             Console.WriteLine();
 
             var maquina = new EnigmaMachine();
-            maquina.setSettings(
-                new[] { 'C', 'E', 'A' },
-                new[] { 'A', 'A', 'A' },
-                "III-I-II",
-                'B');
-            maquina.addPlug('v', 'a');
+            var config = new EnigmaSettings
+            {
+                Rings = new[] { 'C', 'E', 'A' },
+                Grund = new[] { 'A', 'A', 'A' },
+                Order = "III-I-II",
+                Reflector = 'B'
+            };
+            maquina.setSettings(config.Rings, config.Grund, config.Order, config.Reflector);
+            maquina.addPlug('V', 'A');
             Console.WriteLine(maquina.runEnigma(codigo));
 
             //var frequencias = new Dictionary<string, string>
