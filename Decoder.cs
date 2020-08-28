@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using Enigma_Emulator;
 
 namespace LIS_HP
 {
@@ -19,24 +20,33 @@ namespace LIS_HP
             string codigo = Console.ReadLine();
             Console.WriteLine();
 
-            var frequencias = new Dictionary<string, string>
-            {
-                {"Danish",Properties.Resources.DanishQuadgrams},
-                {"English",Properties.Resources.EnglishQuadgrams},
-                {"Finnish",Properties.Resources.FinnishQuadgrams},
-                {"French",Properties.Resources.FrenchQuadgrams},
-                {"German",Properties.Resources.GermanQuadgrams},
-                {"Icelandic",Properties.Resources.IcelandicQuadgrams},
-                {"Polish",Properties.Resources.PolishQuadgrams},
-                {"Russian",Properties.Resources.RussianQuadgrams},
-                {"Spanish",Properties.Resources.SpanishQuadgrams},
-                {"Swedish",Properties.Resources.SwedishQuadgrams}
-            };
+            var maquina = new EnigmaMachine();
+            maquina.setSettings(
+                new[] { 'C', 'E', 'A' },
+                new[] { 'A', 'A', 'A' },
+                "III-I-II",
+                'B');
+            maquina.addPlug('v', 'a');
+            Console.WriteLine(maquina.runEnigma(codigo));
 
-            foreach (var f in frequencias)
-            {
-                Console.WriteLine($"{f.Key}\t-\t{QuebrarCriptografia(codigo, new Frequencia(f.Value))}");
-            }
+            //var frequencias = new Dictionary<string, string>
+            //{
+            //    {"Danish",Properties.Resources.DanishQuadgrams},
+            //    {"English",Properties.Resources.EnglishQuadgrams},
+            //    {"Finnish",Properties.Resources.FinnishQuadgrams},
+            //    {"French",Properties.Resources.FrenchQuadgrams},
+            //    {"German",Properties.Resources.GermanQuadgrams},
+            //    {"Icelandic",Properties.Resources.IcelandicQuadgrams},
+            //    {"Polish",Properties.Resources.PolishQuadgrams},
+            //    {"Russian",Properties.Resources.RussianQuadgrams},
+            //    {"Spanish",Properties.Resources.SpanishQuadgrams},
+            //    {"Swedish",Properties.Resources.SwedishQuadgrams}
+            //};
+
+            //foreach (var f in frequencias)
+            //{
+            //    Console.WriteLine($"{f.Key}\t-\t{QuebrarCriptografia(codigo, new Frequencia(f.Value))}");
+            //}
             Console.WriteLine("Pressione qualquer tecla para sair.");
             Console.ReadKey();
         }
@@ -72,6 +82,15 @@ namespace LIS_HP
             }
             //Retorna o texto decifrado da chave com maior score
             return listaStrings[maiorIndex];
+        }
+
+        private class EnigmaSettings
+        {
+            public char[] Rings { get; set; }
+            public char[] Grund { get; set; }
+            public string Order { get; set; }
+            public char Reflector { get; set; }
+            public List<string> Plugs = new List<string>();
         }
     }
 }
