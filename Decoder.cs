@@ -19,6 +19,16 @@ namespace LIS_HP
             string codigo = "HGNCAZM";
             Console.WriteLine();
 
+            var orderList = new List<string>
+            {
+                "I-II-III",
+                "I-III-II",
+                "II-I-III",
+                "II-III-I",
+                "III-I-II",
+                "III-II-I"
+            };
+
             var maquina = new EnigmaMachine();
             var config = new EnigmaSettings
             {
@@ -27,6 +37,7 @@ namespace LIS_HP
                 Order = "III-I-II",
                 Reflector = 'B'
             };
+
             maquina.setSettings(config.Rings, config.Grund, config.Order, config.Reflector);
             maquina.addPlug('V', 'A');
             Console.WriteLine(maquina.runEnigma(codigo));
